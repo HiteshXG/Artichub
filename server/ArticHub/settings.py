@@ -116,15 +116,12 @@ WSGI_APPLICATION = "ArticHub.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",  # ✅ Correct MySQL Engine
-        "NAME": os.getenv("DB_NAME", "artichub_db"),  # ✅ Use environment variables
-        "USER": os.getenv("DB_USER", "jprashik"),
-        "PASSWORD": os.getenv("DB_PASSWORD", "Lucifer"),
-        "HOST": os.getenv("DB_HOST", "127.0.0.1"),
-        "PORT": os.getenv("DB_PORT", "3306"),
-        "OPTIONS": {
-            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",  # ✅ Avoid SQLite error
-        },
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "postgres",
+        "USER": "postgres.zytkoevfeecjwmounbcn",
+        "PASSWORD": "Artichub@123",
+        "HOST": "aws-1-ap-northeast-1.pooler.supabase.com",
+        "PORT": "5432",
     }
 }
 
@@ -192,8 +189,8 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "jprashik42@gmail.com"
-EMAIL_HOST_PASSWORD = "fbgs gfmp emqd mbou"
+EMAIL_HOST_USER = "gavand.hitesh.it014@gmail.com"
+EMAIL_HOST_PASSWORD = "qpbk atlh iaxj pawv"
 # DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL")
 
 

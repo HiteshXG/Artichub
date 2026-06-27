@@ -175,7 +175,7 @@ class ArtReviewView(APIView):
         art.save()
 
         return Response(ArtDetailSerializer(art).data, status=status.HTTP_200_OK)
-q
+
     def get(self, request, pk):
         try:
             art = ArtProduct.objects.get(pk=pk)

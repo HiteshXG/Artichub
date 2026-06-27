@@ -49,54 +49,56 @@ from rest_framework import generics
 
 User = get_user_model()
 
+import traceback
 
 class RegisterView(APIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
-        serializer = UserSerializer(data=request.data)
-        if serializer.is_valid():
-            user = serializer.save()
-            user.is_active = False  # User should activate via email
-            user.save()
+        try:
+            serializer = UserSerializer(data=request.data)
 
-            current_site = get_current_site(request)
-            domain = current_site.domain
+            if serializer.is_valid():
+                user = serializer.save()
+                user.is_active = False
+                user.save()
 
-            mail_subject = "Activate your Account"
-            message = render_to_string(
-                "activation_email.html",
-                {
-                    "domain": domain,
-                    "user": user,
-                    "uid": urlsafe_base64_encode(force_bytes(user.pk)),
-                    "token": account_activation_token.make_token(user),
-                },
-            )
+                current_site = get_current_site(request)
+                domain = current_site.domain
 
-            to_email = [user.email]  # Convert single email into a list
-            email = EmailMessage(
-                subject=mail_subject,
-                body=message,
-                from_email=settings.DEFAULT_FROM_EMAIL,  # ✅ Default sender email
-                to=to_email,
-            )
+                mail_subject = "Activate your Account"
+                message = render_to_string(
+                    "activation_email.html",
+                    {
+                        "domain": domain,
+                        "user": user,
+                        "uid": urlsafe_base64_encode(force_bytes(user.pk)),
+                        "token": account_activation_token.make_token(user),
+                    },
+                )
 
-            email.content_subtype = "html"  # ✅ Ensure HTML email is sent
-            try:
+                email = EmailMessage(
+                    subject=mail_subject,
+                    body=message,
+                    from_email=settings.EMAIL_HOST_USER,
+                    to=[user.email],
+                )
+                email.content_subtype = "html"
                 email.send()
+
                 return Response(
                     {"message": "Verification email sent successfully!"},
                     status=status.HTTP_201_CREATED,
                 )
-            except Exception as e:
-                return Response(
-                    {"error": f"Failed to send email: {str(e)}"},
-                    status=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                )
 
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.errors, status=400)
 
+        except Exception as e:
+            traceback.print_exc()      # <-- prints the full traceback
+            return Response(
+                {"error": str(e)},
+                status=500
+            )
 
 def activate(request, uidb64, token):
     User = get_user_model()
