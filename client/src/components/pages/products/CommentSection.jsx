@@ -12,7 +12,7 @@
 //   const fetchComments = async () => {
 //     try {
 //       const response = await axios.get(
-//         `http://127.0.0.1:8000/api/product/comments/${productId}/`
+//         `https://artichub-efy9.onrender.com/api/product/comments/${productId}/`
 //       );
 //       setComments(response.data);
 //     } catch (err) {
@@ -36,7 +36,7 @@
 
 //     try {
 //       await axios.post(
-//         `http://127.0.0.1:8000/api/product/comments/${productId}/`,
+//         `https://artichub-efy9.onrender.com/api/product/comments/${productId}/`,
 //         commentToSubmit
 //       );
 
@@ -103,7 +103,7 @@ const CommentSection = ({ productId }) => {
   const fetchComments = async () => {
     try {
       const response = await axios.get(
-        `http://127.0.0.1:8000/api/product/comments/${productId}/`
+        `https://artichub-efy9.onrender.com/api/product/comments/${productId}/`
       );
       setComments(response.data);
     } catch (err) {
@@ -127,7 +127,7 @@ const CommentSection = ({ productId }) => {
 
     try {
       await axios.patch(
-        `http://127.0.0.1:8000/api/product/comments/${productId}/`,
+        `https://artichub-efy9.onrender.com/api/product/comments/${productId}/`,
         commentToSubmit // ✅ Fixed: Directly pass object
       );
 

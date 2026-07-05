@@ -22,7 +22,7 @@ function AuctionList() {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/auction/auctions/"
+          "https://artichub-efy9.onrender.com/api/auction/auctions/"
         );
         console.log("API Response:", response.data);
         setProducts(response.data);

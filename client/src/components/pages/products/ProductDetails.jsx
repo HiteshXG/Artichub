@@ -21,7 +21,7 @@
 //   useEffect(() => {
 //     const fetchProduct = async () => {
 //       try {
-//         const response = await axios.get(`http://127.0.0.1:8000/api/product/${id}/`);
+//         const response = await axios.get(`https://artichub-efy9.onrender.com/api/product/${id}/`);
 //         setProduct(response.data);
 //         console.log(response.data)
 //       } catch (err) {
@@ -34,7 +34,7 @@
 
 //     const fetchRecommendedProducts = async () => {
 //       try {
-//         const response = await axios.post(`http://127.0.0.1:8000/api/ml/recommendations/`,{ product_id : id });
+//         const response = await axios.post(`https://artichub-efy9.onrender.com/api/ml/recommendations/`,{ product_id : id });
 //         console.log(response)
 //         setRecommendedProducts(response.data.recommended_products);
 //       } catch (err) {
@@ -71,7 +71,7 @@
 //     try {
 //       // 🛒 Create Order
 //       const orderResponse = await axios.post(
-//         `http://127.0.0.1:8000/api/order/create/`,
+//         `https://artichub-efy9.onrender.com/api/order/create/`,
 //         {
 //           art: product.id,
 //           quantity: purchaseQuantity,
@@ -86,7 +86,7 @@
 
 //         // 💳 Create Razorpay Payment Order
 //         const paymentResponse = await axios.post(
-//           `http://127.0.0.1:8000/api/payment/razorpay/create/`,
+//           `https://artichub-efy9.onrender.com/api/payment/razorpay/create/`,
 //           { order: orderId, buyer_id: user.id },
 //           { headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" } }
 //         );
@@ -147,7 +147,7 @@
 //   const verifyPayment = async (response, orderId) => {
 //     try {
 //       const verifyResponse = await axios.post(
-//         `http://127.0.0.1:8000/api/payment/razorpay/verify/`,
+//         `https://artichub-efy9.onrender.com/api/payment/razorpay/verify/`,
 //         {
 //           orderid: orderId,
 //           razorpay_order_id: response.razorpay_order_id,
@@ -254,7 +254,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/product/${id}/`);
+        const response = await axios.get(`https://artichub-efy9.onrender.com/api/product/${id}/`);
         setProduct(response.data);
       } catch (err) {
         console.error("Error fetching product:", err);
@@ -266,7 +266,7 @@ const ProductDetails = () => {
 
     const fetchRecommendedProducts = async () => {
       try {
-        const response = await axios.post(`http://127.0.0.1:8000/api/ml/recommendations/`, { product_id: id });
+        const response = await axios.post(`https://artichub-efy9.onrender.com/api/ml/recommendations/`, { product_id: id });
         setRecommendedProducts(response.data.recommended_products);
       } catch (err) {
         console.error("Error fetching recommended products:", err);
@@ -310,7 +310,7 @@ const ProductDetails = () => {
   const verifyPayment = async (response, orderId) => {
         try {
           const verifyResponse = await axios.post(
-            `http://127.0.0.1:8000/api/payment/razorpay/verify/`,
+            `https://artichub-efy9.onrender.com/api/payment/razorpay/verify/`,
             {
               orderid: orderId,
               razorpay_order_id: response.razorpay_order_id,
@@ -323,7 +323,7 @@ const ProductDetails = () => {
           if (verifyResponse.data.success) {
             alert("✅ Payment Successful! Order placed.");
             await axios.patch(
-              `http://127.0.0.1:8000/api/order/order/orderstatus/${orderId}/`,
+              `https://artichub-efy9.onrender.com/api/order/order/orderstatus/${orderId}/`,
               { status: "PAID" },
               { headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" } }
             );
@@ -360,7 +360,7 @@ const ProductDetails = () => {
       console.log("📦 Creating Order...");
       console.log("token :" ,token)
       const orderResponse = await axios.post(
-        `http://127.0.0.1:8000/api/order/create/`,
+        `https://artichub-efy9.onrender.com/api/order/create/`,
         { art: product.id, quantity: purchaseQuantity, amount: product.price, buyer: user.id },
         { headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" } }
       );
@@ -376,7 +376,7 @@ const ProductDetails = () => {
   
       console.log("💳 Creating Razorpay Payment Order...");
       const paymentResponse = await axios.post(
-        `http://127.0.0.1:8000/api/payment/razorpay/create/`,
+        `https://artichub-efy9.onrender.com/api/payment/razorpay/create/`,
         { order_id: orderId, buyer_id: user.id },
         { headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" } }
       );

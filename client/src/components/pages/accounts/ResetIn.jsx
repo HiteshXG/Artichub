@@ -11,7 +11,7 @@ function ResetIn() {
         e.preventDefault();
         console.log(userdata);
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/user/password-reset/', {
+            const response = await axios.post('https://artichub-efy9.onrender.com/api/user/password-reset/', {
                 email: userdata.email,
             });
             console.log(response);

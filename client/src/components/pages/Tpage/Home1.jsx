@@ -22,7 +22,7 @@
 //     const fetchProducts = async () => {
 //       try {
 //         const response = await axios.get(
-//           "http://127.0.0.1:8000/api/product/sale/"
+//           "https://artichub-efy9.onrender.com/api/product/sale/"
 //         );
 //         console.log("API Response:", response.data);
 //         setProducts(response.data);
@@ -141,7 +141,7 @@ function Home1() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/product/sale/");
+        const response = await axios.get("https://artichub-efy9.onrender.com/api/product/sale/");
         console.log("API Response:", response.data);
         setProducts(response.data);
       } catch (error) {

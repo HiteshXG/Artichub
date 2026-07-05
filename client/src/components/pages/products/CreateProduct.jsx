@@ -50,7 +50,7 @@ function CreateProduct() {
       const token = localStorage.getItem('access-token');
       const formDataToSend = new FormData();
       console.log(formData)
-      const response = await axios.post('http://127.0.0.1:8000/api/product/add/',{condition:formData.condition,price:formData.price,title:formData.title,yearCreation:formData.yearCreation},{headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" }})
+      const response = await axios.post('https://artichub-efy9.onrender.com/api/product/add/',{condition:formData.condition,price:formData.price,title:formData.title,yearCreation:formData.yearCreation},{headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" }})
       // ... (keep existing axios post call the same)
     } catch (error) {
       console.log(error);

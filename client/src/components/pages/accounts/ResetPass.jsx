@@ -25,7 +25,7 @@ function ResetPass() {
     try {
       console.log("Uid:",uid)
       
-      await axios.post("http://127.0.0.1:8000/api/user/password-reset-confirm/", {
+      await axios.post("https://artichub-efy9.onrender.com/api/user/password-reset-confirm/", {
     
         new_password,
         uid, // Include uid & token in request (if needed by backend)

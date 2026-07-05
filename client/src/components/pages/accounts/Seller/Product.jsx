@@ -15,7 +15,7 @@ const Product = () => {
         }
         
         const response = await axios.get(
-          'http://127.0.0.1:8000/api/product/seller/', 
+          'https://artichub-efy9.onrender.com/api/product/seller/', 
           { 
             headers: { 
               Authorization: `Bearer ${token}`, 

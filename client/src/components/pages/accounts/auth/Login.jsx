@@ -80,7 +80,7 @@ export const Login = () => {
 
     try {
       const response = await axios.post(
-        'http://127.0.0.1:8000/api/user/register/',
+        'https://artichub-efy9.onrender.com/api/user/register/',
         registerData,
         { headers: { 'Content-Type': 'application/json' } }
       );
@@ -103,7 +103,7 @@ export const Login = () => {
 
     try {
       const response = await axios.post(
-        'http://127.0.0.1:8000/api/user/login/',
+        'https://artichub-efy9.onrender.com/api/user/login/',
         loginData,
         { headers: { 'Content-Type': 'application/json' } }
       );
