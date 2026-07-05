@@ -69,7 +69,7 @@ Welcome to **ArticHub**, a cutting-edge platform where **creativity meets code**
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/prashik287/Artichub1.git
+git clone https://github.com/HiteshXG/Artichub.git
 cd Artichub1
 
 # 2. Backend Setup
