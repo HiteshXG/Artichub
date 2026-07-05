@@ -39,13 +39,18 @@ SECRET_KEY = "django-insecure-)5&k908r@bqieu3lxtqu-8$(^)2cv&#fkn7%uwat)+fd6kv%#a
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_ALLOW_ALL = True
 
 ALLOWED_HOSTS = ["*"]
 # CSRF_TRUSTED_ORIGINS = ["http://localhost:5173"]
 APPEND_SLASH = False
 
-CORS_ALLOW_CREDENTIALS = True  # Allow cookies (important for CSRF)
+# CORS_ALLOW_CREDENTIALS = True  # Allow cookies (important for CSRF)
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOWED_ORIGINS = [
+    "https://artichub-theta.vercel.app",
+]
 # Change to True in production
 
 # Application definition
