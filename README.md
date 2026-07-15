@@ -175,6 +175,7 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 
 ### Workflow
 
+```text
 - Users register or log in using JWT authentication.
 - Artists upload and manage artwork listings.
 - Buyers browse artworks and receive AI-powered recommendations.
@@ -184,6 +185,7 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 - Razorpay securely processes payments and verifies transactions.
 - Orders are stored in PostgreSQL.
 - Users can view order history, auction history, and recommended artwork.
+```
 
 
 <p align="right">(<a href="#readme-top">⬆ Back to Top</a>)</p>
