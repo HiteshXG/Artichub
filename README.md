@@ -80,9 +80,68 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 
 # Screenshots
 
+### Home
+
 <div align="center">
 
-</div>
+### Buyer
+
+<img src="./README_assets/home.png" width="50%">
+
+<br><br>
+
+### Seller
+
+   <img src="./README_assets/Artist.png" width="50%">
+
+   </div>
+
+---
+
+### Auction
+
+<div align="center">
+
+### Auction Page
+
+<img src="./README_assets/bid.png" width="50%">
+
+<br><br>
+
+### Live Auction Page
+
+   <img src="./README_assets/liveAuction.png" width="50%">
+
+   </div>
+
+---
+
+### Orders and Items
+
+<div align="center">
+
+### New Product Page
+
+<img src="./README_assets/newProduct.png" width="50%">
+
+<br><br>
+
+### Orders
+
+   <img src="./README_assets/orders.png" width="50%">
+
+   </div>
+
+---
+
+### Cart
+
+
+<div align="center">
+
+### Cart
+
+<img src="./README_assets/cart.png" width="50%">
 
 
 <p align="right">(<a href="#readme-top">⬆ Back to Top</a>)</p>
@@ -111,7 +170,7 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 # System Architecture
 
 <p align="center">
-<img src="./README_assets/SkillLink.drawio.png" width="50%">
+<img src="./README_assets/Artichub.png" width="50%">
 </p>
 
 ### Workflow
