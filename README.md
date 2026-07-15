@@ -139,6 +139,7 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 
 <img src="./README_assets/cart.png" width="50%">
 
+</div>
 
 <p align="right">(<a href="#readme-top">⬆ Back to Top</a>)</p>
 
@@ -165,9 +166,9 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 
 # System Architecture
 
-<div align="center">
+<p align="center">
 <img src="./README_assets/Artichub.png" width="50%">
-</div>
+</p>
 
 <br></br>
 
