@@ -169,7 +169,7 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 <img src="./README_assets/Artichub.png" width="50%">
 </div>
 
-<br>
+<br></br>
 
 ### Workflow
 
