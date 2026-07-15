@@ -170,7 +170,7 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 # System Architecture
 
 <p align="center">
-<img src="./README_assets/Artichub.png" width="50%">
+<img src="./README_assets/Artichub.png" width="90%">
 </p>
 
 <br></br>
