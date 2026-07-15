@@ -6,13 +6,9 @@
 
 A full-stack marketplace where artists can showcase and sell artwork while buyers discover, purchase, receive AI-powered recommendations, and participate in real-time auctions.
 
-</div>
-
 <p align="center">
   <img src="./README_assets/banner.png" alt="ArticHub Banner" width="100%">
 </p>
-
-<div align="center">
 
 
 <br><br>https://github.com/HiteshXG/Artichub/
