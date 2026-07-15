@@ -16,7 +16,7 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 [![Stars](https://img.shields.io/github/stars/HiteshXG/Artichub?style=for-the-badge&logo=github&color=0f9d58)](https://github.com/HiteshXG/Artichub/stargazers)
 [![Forks](https://img.shields.io/github/forks/HiteshXG/Artichub?style=for-the-badge&logo=git&color=4285f4)](https://github.com/HiteshXG/Artichub/network/members)
 [![Issues](https://img.shields.io/github/issues/HiteshXG/Artichub?style=for-the-badge&logo=github&color=ff5722)](https://github.com/HiteshXG/Artichub/issues)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=vercel)](https://skill-link-brown.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=vercel)](https://artichub-theta.vercel.app/)
 [![License](https://img.shields.io/badge/License-Educational-green?style=for-the-badge)](#license)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)]()
 [![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)]()
@@ -152,16 +152,15 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 ### Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 ### Backend
-![Django](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Redis](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=47A248)
-![Scikit-learn](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
-![Razorpay](https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![WebSockets](https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
-
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google-gemini&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 
 <p align="right">(<a href="#readme-top">⬆ Back to Top</a>)</p>
 
