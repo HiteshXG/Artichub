@@ -169,23 +169,23 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 
 # System Architecture
 
-<p align="center">
+<div align="center">
 <img src="./README_assets/Artichub.png" width="50%">
-</p>
+</div>
 
 <br>
 
 ### Workflow
 
-- Users register or log in using JWT authentication.
-- Artists upload and manage artwork listings.
-- Buyers browse artworks and receive AI-powered recommendations.
-- Artwork details are fetched from PostgreSQL through Django REST APIs.
-- Users participate in live auctions using WebSockets powered by Django Channels and Redis.
-- Buyers add artwork to their shopping cart and proceed to checkout.
-- Razorpay securely processes payments and verifies transactions.
-- Orders are stored in PostgreSQL.
-- Users can view order history, auction history, and recommended artwork.
+1. Users register or log in using JWT authentication.
+2. Artists upload and manage artwork listings.
+3. Buyers browse artworks and receive AI-powered recommendations.
+4. Artwork details are fetched from PostgreSQL through Django REST APIs.
+5. Users participate in live auctions using Django Channels, Redis, and WebSockets.
+6. Buyers add artwork to their shopping cart and proceed to checkout.
+7. Razorpay securely processes payments and verifies transactions.
+8. Orders are stored in PostgreSQL.
+9. Users can view order history, auction history, and recommended artwork.
 
 
 <p align="right">(<a href="#readme-top">⬆ Back to Top</a>)</p>
