@@ -175,7 +175,7 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 
 ### Workflow
 
-```text
+```bash
 - Users register or log in using JWT authentication.
 - Artists upload and manage artwork listings.
 - Buyers browse artworks and receive AI-powered recommendations.
