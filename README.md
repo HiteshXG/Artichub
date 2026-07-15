@@ -92,7 +92,7 @@ A full-stack marketplace where artists can showcase and sell artwork while buyer
 
 ### Seller
 
-   <img src="./README_assets/Artist.png" width="50%">
+   <img src="./README_assets/artist.png" width="50%">
 
    </div>
 
